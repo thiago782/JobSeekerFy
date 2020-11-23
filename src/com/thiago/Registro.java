@@ -28,7 +28,7 @@ public class Registro {
 		System.out.println("Digite o CNPJ do Empregador: ");
 		cnpj = ler.next();
 		
-		conn.inserirPessoa(email, senha, cpf, 1);
+		conn.inserirPessoa(email, senha, cnpj, 1);
 
 		System.out.println("Empregador cadastrado com sucesso! Você será redirecionado para tela Inicial.");
 

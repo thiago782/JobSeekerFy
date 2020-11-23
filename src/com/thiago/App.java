@@ -14,14 +14,13 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import com.thiago.CadastrarItem;
+
 
 public class App {
 
 	public static void main(String[] args) throws IOException, SQLException {
 		int opcao = 0;
 
-		CadastrarItem cad = new CadastrarItem();
 	
 		Registro reg = new Registro();
 		ConexaoUsuario conn = new ConexaoUsuario();
