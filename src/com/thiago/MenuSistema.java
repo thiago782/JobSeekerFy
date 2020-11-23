@@ -8,13 +8,13 @@ public class MenuSistema {
 
 	}
 
-	public void MenuUsuario() {
+	public void MenuUsuario(long idPessoa) {
 		int opcao = 0;
 
 		
 		ConexaoUsuario conn = new ConexaoUsuario();
 		ConexaoVaga connVaga = new ConexaoVaga();
-
+		ConexaoCategoria contCat = new ConexaoCategoria();
 		
 		
 		do {
@@ -31,17 +31,26 @@ public class MenuSistema {
 			opcao = ler.nextInt();
 			switch (opcao) {
 			case 1:
-				System.out.println("Visualizando Vagas...!");
-				System.out.println(conn.idPessoa);
+				contCat.listarCategorias();
+				System.out.println("Informe o código da Categoria que deseja Visualizar!");
+				int codCat = ler.nextInt();
+				if (codCat > 0) {
+					connVaga.listarVagaCategoria(codCat);
+				}
+				else {
+					System.out.println("Por favor, informe um número!");
+				}
+				
 				break;
 
 			case 2:
 				System.out.println("Listando todas as vagas...");
-				connVaga.listarVagas();
+				connVaga.listarVagas(idPessoa);
 				break;
 
 			case 3:
 				System.out.println("Listando vagas que você se candidatou...");
+				connVaga.listarVagasCandidatadas(idPessoa);
 				break;
 
 			case 0:
@@ -78,8 +87,7 @@ public class MenuSistema {
 				break;
 
 			case 2:
-				System.out.println("1 - Sou Empregador!");
-
+				vg.VerificarCandidatosVaga(idRetorno);
 				break;
 
 			case 0:

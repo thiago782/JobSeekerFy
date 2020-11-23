@@ -22,7 +22,7 @@ public class App {
 		int opcao = 0;
 
 		CadastrarItem cad = new CadastrarItem();
-		;
+	
 		Registro reg = new Registro();
 		ConexaoUsuario conn = new ConexaoUsuario();
 		MenuSistema menu = new MenuSistema();
@@ -55,12 +55,10 @@ public class App {
 					if (tipo == 1) {
 						menu.MenuEmpregador(idRetorno);
 					} else if (tipo == 2) {
-
-						System.out.println(conn.idPessoa);
-						menu.MenuUsuario();
+						menu.MenuUsuario(idRetorno);
 					}
 				} else {
-					System.out.println("ai deu ruim absoluto");
+					System.out.println("Não consegui logar!");
 				}
 
 				break;
