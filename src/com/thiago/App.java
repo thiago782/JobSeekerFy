@@ -15,7 +15,6 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 import com.thiago.banco.ConexaoUsuario;
-import com.thiago.sistema.Registro;
 
 
 

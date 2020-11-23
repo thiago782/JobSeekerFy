@@ -5,8 +5,6 @@ import java.util.Scanner;
 import com.thiago.banco.ConexaoCategoria;
 import com.thiago.banco.ConexaoUsuario;
 import com.thiago.banco.ConexaoVaga;
-import com.thiago.sistema.Registro;
-import com.thiago.sistema.Vaga;
 
 public class MenuSistema {
 	Vaga vg = new Vaga();
@@ -104,6 +102,7 @@ public class MenuSistema {
 				break;
 			}
 		} while (opcao != 0);
+	
 		System.out.println("Até a próxima Empregador!");
 	}
 }

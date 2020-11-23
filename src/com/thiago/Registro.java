@@ -1,4 +1,4 @@
-package com.thiago.sistema;
+package com.thiago;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
