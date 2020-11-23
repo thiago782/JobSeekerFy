@@ -1,4 +1,4 @@
-package com.thiago;
+package com.thiago.banco;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -45,6 +45,7 @@ public class ConexaoCategoria {
 	      String consulta = "SELECT * FROM contasbar.categoria";
 
 	      Statement stm = conn.createStatement();
+	      //executa query no banco de dadorno execute query
 	      ResultSet resultado = stm.executeQuery(consulta);
 	      
 	      while(resultado.next()) {

@@ -1,10 +1,13 @@
-package com.thiago;
+package com.thiago.sistema;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
+
+import com.thiago.banco.ConexaoCategoria;
+import com.thiago.banco.ConexaoVaga;
 
 public class Vaga {
 

@@ -1,4 +1,4 @@
-package com.thiago;
+package com.thiago.banco;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

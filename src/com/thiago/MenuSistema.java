@@ -2,6 +2,12 @@ package com.thiago;
 
 import java.util.Scanner;
 
+import com.thiago.banco.ConexaoCategoria;
+import com.thiago.banco.ConexaoUsuario;
+import com.thiago.banco.ConexaoVaga;
+import com.thiago.sistema.Registro;
+import com.thiago.sistema.Vaga;
+
 public class MenuSistema {
 	Vaga vg = new Vaga();
 	public static void main(String[] args) {

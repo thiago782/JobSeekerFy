@@ -1,10 +1,12 @@
-package com.thiago;
+package com.thiago.sistema;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
+
+import com.thiago.banco.ConexaoUsuario;
 
 public class Registro {
 	String email = "";

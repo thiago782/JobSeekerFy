@@ -1,4 +1,4 @@
-package com.thiago;
+package com.thiago.banco;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -46,7 +46,7 @@ public class ConexaoUsuario {
 		ConexaoUsuario conexao = new ConexaoUsuario();
 		Connection conn = conexao.conectar();
 		try {
-			String consulta = "SELECT * FROM usuario WHERE email like 'airton@fkn.com.br'";
+			String consulta = "SELECT * FROM usuario WHERE email like 'thiago@fkn.com.br'";
 
 			Statement stm = conn.createStatement();
 			ResultSet resultado = stm.executeQuery(consulta);
