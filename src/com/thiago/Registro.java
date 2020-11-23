@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-import com.thiago.banco.ConexaoUsuario;
-
 public class Registro {
 	String email = "";
 	String senha = "";

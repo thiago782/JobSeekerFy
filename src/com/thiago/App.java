@@ -14,8 +14,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import com.thiago.banco.ConexaoUsuario;
-
 
 
 public class App {

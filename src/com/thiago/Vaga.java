@@ -6,9 +6,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-import com.thiago.banco.ConexaoCategoria;
-import com.thiago.banco.ConexaoVaga;
-
 public class Vaga {
 
 	int idCategoria = 0;
